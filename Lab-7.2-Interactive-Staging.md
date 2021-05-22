@@ -1,30 +1,38 @@
-    echo "new line" >> README.md
-    git add README.md
-    echo "new line" >> testing.md
-    git status
-    
-    git add -i
+# Interactive staging
 
-![add -i](https://github.com/VolusionDev/volusion-git-training-repo/blob/master/diagrams/add-i.png)
+```bash
+echo "new line" >> README.md
+git add README.md
+echo "new line" >> testing.md
+git status
 
-6: diff
+git add -i
+```
 
-    git diff --cached
+![add -i](diagrams/add-i.png)
 
-![add diff](https://github.com/VolusionDev/volusion-git-training-repo/blob/master/diagrams/add-i-diff.png)
+## diff
 
-### patch -p
+```bash
+git diff --cached
+```
+
+![add diff](diagrams/add-i-diff.png)
+
+## patch -p
 
 First make multiple edits in a file
 
-    # wd -> staging
-    git add --patch   # -p
+```bash
+# wd -> staging
+git add --patch   # -p
 
-    # wd <- staging
-    git reset -p
+# wd <- staging
+git reset -p
 
-    # undo working dir
-    git checkout -p
+# undo working dir
+git checkout -p
 
-    # stash <- wd
-    git stash save -p
+# stash <- wd
+git stash save -p
+```

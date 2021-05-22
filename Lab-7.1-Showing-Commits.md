@@ -1,7 +1,7 @@
 ### show me the-money
 
     git log --graph --decorate --oneline
-    git show # sha 
+    git show # sha
     git show # branch
     git show HEAD
     git show   # defaults to HEAD
@@ -9,15 +9,15 @@
 
     # what's the difference between git show and cat-file?
     git cat-file -p #sha
-    
+
     # reverse and get the sha of a branch
     git rev-parse HEAD
 
 ### Ancestry relative to HEAD
-    
+
     git show HEAD
     git show HEAD^  # parent commit of HEAD
-    
+
     # on windows need to escape ^
     git show HEAD^^
     git show "HEAD^"
@@ -35,10 +35,10 @@ Are these equivalent?
    git show HEAD~
 
 ### ls-tree - snapshot of all files at time of a given commit
-    
+
     # a tree of BLOBs
     git ls-tree -r HEAD # or sha1
-    
+
     # only show file names of the snapshot
     git ls-tree --name-only -r HEAD # or sha1
 
@@ -51,22 +51,22 @@ Are these equivalent?
 “What work is on this branch that I haven’t yet merged into my main branch?”
 
     git log HEAD~4..HEAD^ --oneline # show commits between parent of head and 4 commits from HEAD
-    
+
     # a..b  what's in b that is not in a.
-    git log master..experiment # what's new in experiment that's not in master   
+    git log master..experiment # what's new in experiment that's not in master
     git log experiment..master --oneline # show new commits in master not in feature
     # exclude merges, shows new commits in origin/master
     git log --no-merges experiment..origin/master
 
-![Range History](https://github.com/VolusionDev/volusion-git-training-repo/blob/master/diagrams/range-history.png)
+![Range History](diagrams/range-history.png)
 
-![Right Join experiment](https://github.com/VolusionDev/volusion-git-training-repo/blob/master/diagrams/right-join-experiment.png)
+![Right Join experiment](diagrams/right-join-experiment.png)
 
     git log master..experiment
     D
     C
 
-![Right Join master](https://github.com/VolusionDev/volusion-git-training-repo/blob/master/diagrams/right-join-master.png)
+![Right Join master](diagrams/right-join-master.png)
 
     git log experiment..master
     F
@@ -88,9 +88,9 @@ Are these equivalent?
 ### Triple Dot ...
 “what is in master or experiment but not any common references”
 
-![venn outer](https://github.com/VolusionDev/volusion-git-training-repo/blob/master/diagrams/venn-outer.png)
+![venn outer](diagrams/venn-outer.png)
 
-    # like a union of left and right outer joins 
+    # like a union of left and right outer joins
     git log master...experiment
     F
     E
