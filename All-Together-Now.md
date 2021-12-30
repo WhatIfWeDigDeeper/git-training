@@ -9,4 +9,4 @@
     `git config --global alias.cd checkout`
 
 
-[Quiz](https://docs.google.com/forms/d/e/1FAIpQLSdmo2Arny-Oy2QdH6GNCJxtF9_5I7CG9bAq847so8hPuLm-8Q/viewform?usp=sf_link)
+[Quiz](quiz.md)
