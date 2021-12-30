@@ -10,7 +10,7 @@
 
     git remote -v  # --verbose
 
-    git remote add upstream https://github.com/VolusionDev/volusion-git-training-repo.git
+    git remote add upstream https://github.com/WhatIfWeDigDeeper/git-training.git
 
     git remote show
     git remote -v

@@ -1,7 +1,7 @@
 _Cloning_
 
-    git clone https://github.com/VolusionDev/volusion-git-training-repo.git
-    cd volusion-git-training-repo
+    git clone https://github.com/WhatIfWeDigDeeper/git-training.git
+    cd git-training
 
     git remote
     git remote -v
@@ -10,7 +10,7 @@ _Cloning_
 _Forking [GitHub](https://help.github.com/articles/configuring-a-remote-for-a-fork/)_
 
     # fork repo in GitHub
-    git clone https://github.com/••••••••-volusion/volusion-git-training-repo.git fork-gtrain-repo
+    git clone https://github.com/WhatIfWeDigDeeper/git-training.git fork-gtrain-repo
     git remote
     git remote -v
     git remote show origin

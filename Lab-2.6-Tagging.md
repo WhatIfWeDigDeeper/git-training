@@ -2,7 +2,7 @@
 
 ```bash
 git tag --list   # also -l or no switch
-echo "Copyright (c) 2018 Volusion, LLC. All rights reserved" > LICENSE
+echo "Copyright (c) 2021 All rights un-reserved" > LICENSE
 git status
 git add LICENSE
 git commit -m "Added license"

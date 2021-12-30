@@ -1,4 +1,4 @@
-# Welcome to the volusion-git-training-repo wiki
+# Welcome to Git Training
 
 Primary source:
 [ProGit](https://git-scm.com/book/en/v2)
