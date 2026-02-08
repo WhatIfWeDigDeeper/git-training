@@ -41,3 +41,7 @@ Show diff with remote or what you are about to push
 Check for whitespace issues
 
     git diff --check
+
+---
+
+← [prev](./Chapter-3-Goals.md) | [next](./Lab-3.2-Merging.md) → | 🏠 [home](./README.md)

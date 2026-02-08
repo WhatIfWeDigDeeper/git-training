@@ -10,3 +10,7 @@ When using a git command, ask yourself two questions:
 1. "How does this command change the Repository?"
 
 ![Three Main Areas](https://git-scm.com/book/en/v2/images/areas.png)
+
+---
+
+← [prev](./Chapter-2-Goals.md) | [next](./Undo.md) → | 🏠 [home](./README.md)

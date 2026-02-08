@@ -58,3 +58,5 @@ typings/
 .env
 
 .obsidian
+
+settings.local.json

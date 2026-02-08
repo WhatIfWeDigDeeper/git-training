@@ -36,3 +36,7 @@ git checkout -p
 # stash <- wd
 git stash save -p
 ```
+
+---
+
+← [prev](./Lab-7.1-Showing-Commits.md) | [next](./Lab-7.3-The-Stash.md) → | 🏠 [home](./README.md)

@@ -37,3 +37,7 @@ Merge Commit:
     git revert 23539a2 -m 1
     # choose your branch to fall back to
     git revert 23539a2 -m 2
+
+---
+
+← [prev](./Lab-7.5-Searching.md) | [next](./Lab-7.8-Advanced-Merging.md) → | 🏠 [home](./README.md)

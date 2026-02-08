@@ -6,3 +6,6 @@
 
 _Why does it create a new sha1?_
 
+---
+
+← [prev](./Lab-3.6-Rebasing.md) | [next](./Chapter-7-Goals.md) → | 🏠 [home](./README.md)

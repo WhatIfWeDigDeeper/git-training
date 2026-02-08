@@ -8,3 +8,7 @@
 
 
 [Argument to not use them](https://dev.to/gonedark/stop-aliasing-core-git-commands)
+
+---
+
+← [prev](./Lab-2.6-Tagging.md) | [next](./Chapter-3-Goals.md) → | 🏠 [home](./README.md)

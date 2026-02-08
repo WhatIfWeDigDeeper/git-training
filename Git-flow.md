@@ -13,3 +13,7 @@
     # make sure changes and tags are pushed
     git status
     git describe --tags
+
+---
+
+← [prev](./All-Together-Now.md) | [next](./quiz.md) → | 🏠 [home](./README.md)

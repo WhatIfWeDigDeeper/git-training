@@ -46,8 +46,7 @@
     9.  git branch -d feature/add-col
     10. git push origin --delete feature/add-field
     11. cat .git/config
-    
 
+---
 
-
-
+← [prev](./Lab-3.2-Merging.md) | [next](./Lab-3.6-Rebasing.md) → | 🏠 [home](./README.md)

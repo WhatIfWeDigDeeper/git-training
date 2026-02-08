@@ -34,3 +34,7 @@ git checkout -b bugfix/correct-license v0.0.1
 ```
 
 ![lightweight vs annotated tags](diagrams/light-v-annotated-tags.png)
+
+---
+
+← [prev](./Lab-2-Send-in-the-Clones.md) | [next](./Git-Aliases.md) → | 🏠 [home](./README.md)

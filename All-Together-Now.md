@@ -10,3 +10,7 @@
 
 
 [Quiz](quiz.md)
+
+---
+
+← [prev](./Lab-7.8-Advanced-Merging.md) | [next](./Git-flow.md) → | 🏠 [home](./README.md)

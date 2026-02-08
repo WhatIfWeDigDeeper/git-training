@@ -49,3 +49,7 @@
 |:----------------|:-------|:-----|:-------|
 |file.txt ||||
 ||R file.md || git mv file.txt file.md
+
+---
+
+← [prev](./Three-Main-Areas.md) | [next](./Lab-1-There-and-back-again.md) → | 🏠 [home](./README.md)

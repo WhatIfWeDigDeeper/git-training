@@ -48,3 +48,7 @@ git branch --no-merged
 
 git branch -d feature/add-field
 ```
+
+---
+
+← [prev](./Lab-3-Let-us-branch-out.md) | [next](./Lab-3.5-Remote-Branches.md) → | 🏠 [home](./README.md)

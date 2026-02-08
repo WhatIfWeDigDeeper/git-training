@@ -31,3 +31,7 @@ _Forking [GitHub](https://help.github.com/articles/configuring-a-remote-for-a-fo
 1. Check status
 1. Make another change to notes.md
 1. Check status.  Why is it duplicated?
+
+---
+
+← [prev](./The-Commit.md) | [next](./Lab-2.6-Tagging.md) → | 🏠 [home](./README.md)

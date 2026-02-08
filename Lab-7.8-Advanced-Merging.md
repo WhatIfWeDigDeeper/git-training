@@ -71,3 +71,7 @@ See what changed after merge and before committing merge
 ### Un-cherry picking
 
     git revert #sha1
+
+---
+
+← [prev](./Lab-7.6-Rewriting-History.md) | [next](./All-Together-Now.md) → | 🏠 [home](./README.md)

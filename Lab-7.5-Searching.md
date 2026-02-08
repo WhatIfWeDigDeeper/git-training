@@ -21,3 +21,7 @@ git log -L :sumQuantity:cartUtil.js --oneline
 ```
 
 ![git log -L](diagrams/git-log-L.png)
+
+---
+
+← [prev](./Lab-7.3-The-Stash.md) | [next](./Lab-7.6-Rewriting-History.md) → | 🏠 [home](./README.md)

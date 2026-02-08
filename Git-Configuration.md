@@ -52,3 +52,7 @@ _Write config settings_
 ## Git ignore
 
   [.gitignore](https://gist.github.com/subfuzion/db7f57fff2fb6998a16c)
+
+---
+
+← [prev](./Git-install-and-tools.md) | [next](./Chapter-2-Goals.md) → | 🏠 [home](./README.md)

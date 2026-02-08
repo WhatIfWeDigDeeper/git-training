@@ -132,3 +132,7 @@ What will reflog show after cloning a repo?
 
 ### References
 [How to list files in a commit?](https://stackoverflow.com/questions/424071/how-to-list-all-the-files-in-a-commit)
+
+---
+
+← [prev](./Chapter-7-Goals.md) | [next](./Lab-7.2-Interactive-Staging.md) → | 🏠 [home](./README.md)

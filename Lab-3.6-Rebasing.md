@@ -17,3 +17,7 @@ Database objects in Git are *immutable*.  If you change anything, then you get a
 
     # like a single commit rebase.
     git cherry-pick #sha
+
+---
+
+← [prev](./Lab-3.5-Remote-Branches.md) | [next](./Lab-5.3-Cherry-Picking.md) → | 🏠 [home](./README.md)

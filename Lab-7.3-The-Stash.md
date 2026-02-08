@@ -34,4 +34,8 @@
     git clean -d -f -n  # -d remove directories
 
     # interactive
-    git clean -i   
+    git clean -i
+
+---
+
+← [prev](./Lab-7.2-Interactive-Staging.md) | [next](./Lab-7.5-Searching.md) → | 🏠 [home](./README.md)

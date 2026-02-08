@@ -85,3 +85,7 @@
   | `git checkout -- file1.txt` | [ ]   | [ ] |
 
 ## Optional: Are there any topics or questions you would like added to the quiz?
+
+---
+
+← [prev](./Git-flow.md) | 🏠 [home](./README.md)

@@ -99,3 +99,6 @@ https://stackoverflow.com/questions/7251477/what-are-the-differences-between-dou
 1. check status
 1. check log
 
+---
+
+← [prev](./Undo.md) | [next](./The-Commit.md) → | 🏠 [home](./README.md)

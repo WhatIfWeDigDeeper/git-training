@@ -20,3 +20,7 @@ sudo port install zsh zsh-completions
 
 ### Others
 [Git Extras](https://github.com/tj/git-extras)
+
+---
+
+← [prev](./Why-Git.md) | [next](./Git-Configuration.md) → | 🏠 [home](./README.md)
