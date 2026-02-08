@@ -1,4 +1,4 @@
-**Three Main Areas** [from ProGit](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics)
+**Three Main Areas** [from ProGit](https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F)
 
 Question:  Why are there three areas instead of two?
 
