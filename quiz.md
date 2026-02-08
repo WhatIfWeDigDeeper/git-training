@@ -61,7 +61,7 @@
 
 1. What are some different modifiers in an interactive rebase?
 
-1. Explain the difference between a recursive merge and a fast-forward merge?
+1. Explain the difference between a three-way merge and a fast-forward merge?
 
 1. What happens if you run the command 'git reset --hard HEAD'
 
@@ -73,6 +73,8 @@
 
 1. Command to clean up or delete a merged local branch named feature1
 
+1. What is the difference between `git checkout`, `git switch`, and `git restore`?
+
 1. Check areas that would be affected by the following commands
 
   | Command     |  Working Directory  | Staging |
@@ -82,8 +84,6 @@
   | `git checkout -- file1.txt` | [ ]   | [ ] |
   | `git restore file1.txt` | [ ]   | [ ] |
   | `git restore --staged file1.txt` | [ ]  | [ ] |
-
-24. What is the difference between `git checkout`, `git switch`, and `git restore`?
 
 ## Optional: Are there any topics or questions you would like added to the quiz?
 

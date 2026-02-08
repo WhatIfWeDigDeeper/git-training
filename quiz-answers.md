@@ -117,11 +117,11 @@
    - **fixup** — meld this commit into the previous one but discard this commit's message
    - **drop** — remove the commit entirely
 
-1. **Explain the difference between a recursive merge and a fast-forward merge?**
+1. **Explain the difference between a three-way merge and a fast-forward merge?**
 
    A **fast-forward merge** happens when the current branch has no new commits since the branch being merged diverged. Git simply moves the branch pointer forward to the latest commit — no new merge commit is created.
 
-   A **recursive merge** (or three-way merge) happens when both branches have diverged with new commits. Git finds the common ancestor, compares both sets of changes, and creates a new **merge commit** with two parents that combines the work from both branches.
+   A **three-way merge** happens when both branches have diverged with new commits. Git finds the common ancestor, compares both sets of changes, and creates a new **merge commit** with two parents that combines the work from both branches.
 
 1. **What happens if you run the command `git reset --hard HEAD`?**
 
@@ -130,10 +130,10 @@
 1. **Command to compare your local changes or differences before pushing your commit(s) to main on the remote**
 
    ```
-   git diff origin/main
+   git diff origin/main..HEAD
    ```
 
-   Or more specifically to compare just the commits:
+   This compares your committed changes against the remote-tracking branch. To see a commit-level summary instead:
    ```
    git log origin/main..HEAD
    ```
@@ -158,6 +158,15 @@
    git branch -d feature1
    ```
 
+1. **What is the difference between `git checkout`, `git switch`, and `git restore`?**
+
+    `git checkout` is a multi-purpose command that can both switch branches and restore files. Because it does two very different things, Git introduced two focused replacements:
+
+    - **`git switch`** — dedicated to switching branches (e.g., `git switch feature1`, `git switch -c new-branch`). It only handles branch operations and is safer because it won't accidentally overwrite files.
+    - **`git restore`** — dedicated to restoring file contents (e.g., `git restore file.txt` to discard working directory changes, `git restore --staged file.txt` to unstage). It only handles file restoration.
+
+    Together, `git switch` and `git restore` split the responsibilities of `git checkout` into two clearer, more intentional commands.
+
 1. **Check areas that would be affected by the following commands**
 
    | Command     |  Working Directory  | Staging |
@@ -167,12 +176,3 @@
    | `git checkout -- file1.txt` | [x]   |  |
    | `git restore file1.txt` | [x]   |  |
    | `git restore --staged file1.txt` |   | [x] |
-
-24. **What is the difference between `git checkout`, `git switch`, and `git restore`?**
-
-    `git checkout` is a multi-purpose command that can both switch branches and restore files. Because it does two very different things, Git introduced two focused replacements:
-
-    - **`git switch`** — dedicated to switching branches (e.g., `git switch feature1`, `git switch -c new-branch`). It only handles branch operations and is safer because it won't accidentally overwrite files.
-    - **`git restore`** — dedicated to restoring file contents (e.g., `git restore file.txt` to discard working directory changes, `git restore --staged file.txt` to unstage). It only handles file restoration.
-
-    Together, `git switch` and `git restore` split the responsibilities of `git checkout` into two clearer, more intentional commands.
