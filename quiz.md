@@ -83,7 +83,7 @@
   | `git restore file1.txt` | [ ]   | [ ] |
   | `git restore --staged file1.txt` | [ ]  | [ ] |
 
-1. What is the difference between `git checkout`, `git switch`, and `git restore`?
+24. What is the difference between `git checkout`, `git switch`, and `git restore`?
 
 ## Optional: Are there any topics or questions you would like added to the quiz?
 
