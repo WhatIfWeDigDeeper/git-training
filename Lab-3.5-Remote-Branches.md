@@ -17,35 +17,35 @@
 
     git branch --all
     
-    git show-ref master
+    git show-ref main
 
     # a remote branch is a pointer to a commit
 
     cat .git/config
 
     git fetch
-    git merge origin/master
+    git merge origin/main
     # or
     git pull
 
     git checkout -b feature/add-col
     # make 2 changes
-    git push -u feature/add-col origin/feature/add-col
+    git push -u origin feature/add-col
 
-    1.  git checkout master
+    1.  git checkout main
     2.  git pull
         # see latest commits on branches
     3.  git branch -v   # or git show-ref
         # squash commits from branch into one commit
     4.  git merge --squash feature/add-col
     5.  git commit -m "[bug/feature number] added ..."
-    6.  git show-ref master
+    6.  git show-ref main
     7.  git log --oneline --abbrev-commit
     8.  git push
-    9.  git show-ref master
-    9.  git branch -d feature/add-col
-    10. git push origin --delete feature/add-field
-    11. cat .git/config
+    9.  git show-ref main
+    10. git branch -d feature/add-col
+    11. git push origin --delete feature/add-col
+    12. cat .git/config
 
 ---
 

@@ -28,13 +28,13 @@ First make multiple edits in a file
 git add --patch   # -p
 
 # wd <- staging
-git reset -p
+git reset -p                  # or: git restore --staged -p
 
 # undo working dir
-git checkout -p
+git checkout -p               # or: git restore -p
 
 # stash <- wd
-git stash save -p
+git stash push -p
 ```
 
 ---

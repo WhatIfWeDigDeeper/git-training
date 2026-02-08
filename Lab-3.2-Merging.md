@@ -8,8 +8,8 @@ What's the difference between?
 Checkout target and then merge from source branch into target.
 
 ```bash
-feature/add-field> git checkout master
-master> git merge feature/add-field
+feature/add-field> git checkout main
+main> git merge feature/add-field
 ```
 
 ![log graph](diagrams/log-graph.png)

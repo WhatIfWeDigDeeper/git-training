@@ -9,43 +9,52 @@
 
 ## Undo changes to working directory
 
-|Working Directory| Staged | Repo | Command
+| Working Directory | Staged | Repo | Command
 |:----------------|:-------|:-----|:-------|
   M package.json | | | |
-| | | | git checkout -- package.json #or
+| | | | git checkout -- package.json
+| | | | git restore package.json &nbsp; _(Git 2.23+)_
 
 
 ## Unstage file back to working directory
-|Working Directory| Staged | Repo | Command
+
+| Working Directory | Staged | Repo | Command
 |:----------------|:-------|:-----|:-------|
 | |M package.json|||
 |M package.json| || git reset package.json
+| | | | git restore --staged package.json &nbsp; _(Git 2.23+)_
 
 ## Reset staging and working directory from Repo.
-|Working Directory| Staged | Repo | Command
+
+| Working Directory | Staged | Repo | Command
 |:----------------|:-------|:-----|:-------|
 |M package.json|M package.json|||
 || || git reset --hard
 
 ## Reset staging and working directory to a specific commit, any commits after sha will be unreachable
-|Working Directory| Staged | Repo | Command
+
+| Working Directory | Staged | Repo | Command
 |:----------------|:-------|:-----|:-------|
 || || git reset --hard # sha1
 
 ## Undo completely staged changes
-|Working Directory| Staged | Repo | Command
+
+| Working Directory | Staged | Repo | Command
 |:----------------|:-------|:-----|:-------|
 | |M package.json|||
 || || git checkout HEAD package.json
+| | | | git restore --staged --worktree package.json &nbsp; _(Git 2.23+)_
 
 ## Delete new file from staging, but keep in working directory
-|Working Directory| Staged | Repo | Command
+
+| Working Directory | Staged | Repo | Command
 |:----------------|:-------|:-----|:-------|
 | |A new-file.md|||
-|?? new-file.md| || git rm --cached package.json
+|?? new-file.md| || git rm --cached new-file.md
 
 ## rename file
-|Working Directory| Staged | Repo | Command
+
+| Working Directory | Staged | Repo | Command
 |:----------------|:-------|:-----|:-------|
 |file.txt ||||
 ||R file.md || git mv file.txt file.md

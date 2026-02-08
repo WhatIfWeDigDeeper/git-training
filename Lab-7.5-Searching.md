@@ -24,4 +24,4 @@ git log -L :sumQuantity:cartUtil.js --oneline
 
 ---
 
-← [prev](./Lab-7.3-The-Stash.md) | [next](./Lab-7.6-Rewriting-History.md) → | 🏠 [home](./README.md)
+← [prev](./Lab-7.4-Worktrees.md) | [next](./Lab-7.6-Rewriting-History.md) → | 🏠 [home](./README.md)

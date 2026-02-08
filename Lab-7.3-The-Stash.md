@@ -4,7 +4,7 @@
     # or
     git stash
 
-    git stash --u   # include untracked files
+    git stash -u   # include untracked files
     git stash --all
     
     git stash pop
@@ -38,4 +38,4 @@
 
 ---
 
-← [prev](./Lab-7.2-Interactive-Staging.md) | [next](./Lab-7.5-Searching.md) → | 🏠 [home](./README.md)
+← [prev](./Lab-7.2-Interactive-Staging.md) | [next](./Lab-7.4-Worktrees.md) → | 🏠 [home](./README.md)

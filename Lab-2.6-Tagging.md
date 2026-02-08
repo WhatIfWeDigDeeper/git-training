@@ -28,8 +28,8 @@ git cat-file -p v0.0.2
 git checkout v0.0.1
 ls   # where is TAGGING.md?
 
-git checkout master
-git checkout -b bugfix/correct-license v0.0.1
+git checkout main    # or: git switch main
+git checkout -b bugfix/correct-license v0.0.1  # or: git switch -c bugfix/correct-license v0.0.1
 
 ```
 

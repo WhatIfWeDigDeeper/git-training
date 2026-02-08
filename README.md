@@ -38,22 +38,17 @@ Primary source:
 1. [Lab 7.1: Showing Commits](./Lab-7.1-Showing-Commits.md)
 1. [Lab 7.2: Interactive Staging](./Lab-7.2-Interactive-Staging.md)
 1. [Lab 7.3: Stashing](./Lab-7.3-The-Stash.md)
+1. [Lab 7.4: Worktrees](./Lab-7.4-Worktrees.md)
 1. [Lab 7.5: Searching](./Lab-7.5-Searching.md)
 1. [Lab 7.6: Rewriting History](./Lab-7.6-Rewriting-History.md)
 1. [Lab 7.7: Reset and checkout](./Undo.md)
 1. [Lab 7.8: Advanced Merging](./Lab-7.8-Advanced-Merging.md)
 
-## Le Fin
+## Wrap Up
 
-1. [Putting it altogether](./All-Together-Now.md)
-
-### _Topics to cover_
-
-* [git flow model](./Git-flow.md)
-* [git help _command_](https://git-scm.com/book/en/v2/Getting-Started-Getting-Help)
-
-    git help add
-    git add -h
+1. [Putting it all together](./All-Together-Now.md)
+1. [Branching strategies: git flow](./Git-flow.md)
+1. [Getting help](https://git-scm.com/book/en/v2/Getting-Started-Getting-Help): `git help add` or `git add -h`
 
 End of course [quiz](./quiz.md)
 
