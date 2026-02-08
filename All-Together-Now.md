@@ -1,6 +1,7 @@
 ## _Putting it all together_
 
 ### Configuration Scenario
+
 1. Open your global gitconfig file.
 1. Review the value for REuse REcorded REsolution
   If not set, enable it from the command line.

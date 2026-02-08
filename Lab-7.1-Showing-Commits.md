@@ -53,31 +53,31 @@ Are these equivalent?
     git log HEAD~4..HEAD^ --oneline # show commits between parent of head and 4 commits from HEAD
 
     # a..b  what's in b that is not in a.
-    git log master..experiment # what's new in experiment that's not in master
-    git log experiment..master --oneline # show new commits in master not in feature
-    # exclude merges, shows new commits in origin/master
-    git log --no-merges experiment..origin/master
+    git log main..experiment # what's new in experiment that's not in master
+    git log experiment..main --oneline # show new commits in master not in feature
+    # exclude merges, shows new commits in origin/main
+    git log --no-merges experiment..origin/main
 
 ![Range History](diagrams/range-history.png)
 
 ![Right Join experiment](diagrams/right-join-experiment.png)
 
-    git log master..experiment
+    git log main..experiment
     D
     C
 
 ![Right Join master](diagrams/right-join-master.png)
 
-    git log experiment..master
+    git log experiment..main
     F
     E
 
     # commits in HEAD not in origin, iow, what will be pushed to remote
-    # Like a Right Outer Join where origin/master is null
-    git log origin/master..HEAD
+    # Like a Right Outer Join where origin/main is null
+    git log origin/main..HEAD
 
     # defaults to HEAD if omitted
-    git log origin/master..
+    git log origin/main..
 
 3+ branches
 “to see all commits that are reachable from refA or refB but not from refC, you can use either of:”
@@ -86,26 +86,27 @@ Are these equivalent?
     git log refA refB --not refC
 
 ### Triple Dot ...
-“what is in master or experiment but not any common references”
+
+"what is in main or experiment but not any common references"
 
 ![venn outer](diagrams/venn-outer.png)
 
     # like a union of left and right outer joins
-    git log master...experiment
+    git log main...experiment
     F
     E
     D
     C
 
     # which is left and which is right?
-    git log --left-right master...experiment
+    git log --left-right main...experiment
     < F
     < E
     > D
     > C
 
     # what's changed in experiment only
-    git diff master...experiment
+    git diff main...experiment
     D
     C
 
@@ -114,6 +115,7 @@ Are these equivalent?
 [Stackoverflow: differences-between-double-dot-and-triple-dot-in-git-dif](https://stackoverflow.com/questions/7251477/what-are-the-differences-between-double-dot-and-triple-dot-in-git-dif)
 
 ### Where have you been?
+
 [RefLog](https://git-scm.com/book/en/v2/Git-Tools-Revision-Selection) :: _shell history_
 
     git reflog
@@ -121,7 +123,7 @@ Are these equivalent?
     git log -g --abbrev-commit --oneline
 
     git show HEAD@{2}
-    git show master@{yesterday}
+    git show main@{yesterday}
 
 What will reflog show after cloning a repo?
 
@@ -131,6 +133,7 @@ What will reflog show after cloning a repo?
 
 
 ### References
+
 [How to list files in a commit?](https://stackoverflow.com/questions/424071/how-to-list-all-the-files-in-a-commit)
 
 ---

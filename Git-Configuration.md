@@ -10,11 +10,15 @@ _Write config settings_
     git config --global user.name "Your Name"
     git config --global user.email your.email@gmail.com
 
+    # set default branch name for new repos (Git 2.28+)
+    # "master" was the historical default; "main" is now standard
+    git config --global init.defaultBranch main
+
     # default to git status --short
     git config status.short true
 
     # default pull to rebase
-    git config --global pull.rebase true.
+    git config --global pull.rebase true
 
     # REuse REcorded REsolution
     git config --global rerere.enabled true
@@ -22,13 +26,17 @@ _Write config settings_
     # pager
     git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
 
-### [Editor](https://help.github.com/articles/associating-text-editors-with-git/)
+### [Editor](https://git-scm.com/book/en/v2/Appendix-C%3A-Git-Commands-Setup-and-Config)
 
     # wait flag is important for commit messages.
-    git config --global core.editor "atom --wait"
+    # VS Code
+    git config --global core.editor "code --wait"
 
     # or Sublime
     git config --global core.editor "subl -n -w"
+
+    # or vim / nano
+    git config --global core.editor vim
 
     # commit message template (default)
     git config --global commit.template ~/.gitmessage.txt
@@ -39,7 +47,11 @@ _Write config settings_
 
 ### Diff
 
-[diff-so-fancy](https://github.com/so-fancy/diff-so-fancy)
+[delta](https://github.com/dandavison/delta) — modern diff pager with syntax highlighting and side-by-side view
+
+    git config --global core.pager delta
+
+[diff-so-fancy](https://github.com/so-fancy/diff-so-fancy) — simpler alternative
 
 ### Mergetool and Diff Tool
 

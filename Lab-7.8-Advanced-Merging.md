@@ -16,7 +16,7 @@ Bailing out of a merge conflict.
 Whitespace
 
     # ignore whitespace completely
-    git merge -Xignore-space-change experiment
+    git merge -Xignore-all-space experiment
 
     # for each line treat whitespace characters as equivalent
     git merge -Xignore-space-change experiment

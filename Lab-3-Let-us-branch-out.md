@@ -1,10 +1,10 @@
+> **Note:** Git's default branch was historically called `master`. Since Git 2.28 (2020), the default is configurable and most new repos use `main`. These examples use `main` — substitute your repo's default branch name if different.
+
 What's a branch?
 
     git branch
 
-    cat .git/refs/heads/master
-
-What's the significance of master?
+    cat .git/refs/heads/main
 
 What is the current branch?
 
@@ -12,9 +12,12 @@ What is the current branch?
 
 What happens when you checkout a branch?
 
-    git checkout master
+    git checkout main
+    # modern alternative (Git 2.23+):
+    git switch main
+
     cat .git/HEAD
-    cat .git/refs/heads/master
+    cat .git/refs/heads/main
 
 Create a new branch
 
@@ -23,6 +26,8 @@ Create a new branch
 
     # or one command
     git checkout -b feature/docs
+    # modern alternative (Git 2.23+):
+    git switch -c feature/docs
 
 Show latest commits for each branch
 
@@ -31,12 +36,12 @@ Show latest commits for each branch
 Show differences between branches
 
     git diff # source branch # target branch
-    git diff master feature/123-add-column # red=not in branch, green=addition from branch
-    git diff feature/123-add-column master  # red=not in master, green=addition to branch
+    git diff main feature/123-add-column # red=not in branch, green=addition from branch
+    git diff feature/123-add-column main  # red=not in main, green=addition to branch
 
 Show diff with remote or what you are about to push
 
-    git diff origin/master
+    git diff origin/main
 
 Check for whitespace issues
 

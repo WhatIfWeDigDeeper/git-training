@@ -40,7 +40,7 @@
    - [ ] `git stash apply the second one`
    - [ ] `git stash pop pop`
    - [ ] `git stash drop pop`
-   - [ ] `git stash apply stash@{2}`
+   - [ ] `git stash apply stash@{1}`
 
 1. What tag data is added with an annotated tag?
 
@@ -65,24 +65,25 @@
 
 1. What happens if you run the command 'git reset --hard HEAD'
 
-1. Command to compare your local changes or differences before pushing your commit(s) to master on the remote
+1. Command to compare your local changes or differences before pushing your commit(s) to main on the remote
 
-1. Command to log or show commits in a branch feature1 that are not in the master branch
+1. Command to log or show commits in a branch feature1 that are not in the main branch
 
-1. Command to log or show unique commits in both branch feature1 and the master branch
+1. Command to log or show unique commits in both branch feature1 and the main branch
 
 1. Command to clean up or delete a merged local branch named feature1
 
-1. Check areas that would be effected by the following commands
+1. Check areas that would be affected by the following commands
 
-  | Command     |  Working Directory  | Staing |
-  | :---------- |     :---:     | ---: |
+  | Command     |  Working Directory  | Staging |
+  | :---------- |     :---:     | :---: |
   | `git reset file1.txt` | [ ]   | [ ] |
-  | `git reset --hard file1.txt` | [ ]  | [ ] |
+  | `git reset --hard` | [ ]  | [ ] |
   | `git checkout -- file1.txt` | [ ]   | [ ] |
-  | `git reset file1.txt` | [ ]   | [ ] |
-  | `git reset --hard file1.txt` | [ ]  | [ ] |
-  | `git checkout -- file1.txt` | [ ]   | [ ] |
+  | `git restore file1.txt` | [ ]   | [ ] |
+  | `git restore --staged file1.txt` | [ ]  | [ ] |
+
+1. What is the difference between `git checkout`, `git switch`, and `git restore`?
 
 ## Optional: Are there any topics or questions you would like added to the quiz?
 

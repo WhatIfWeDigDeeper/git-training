@@ -12,8 +12,8 @@
     git log --graph --oneline --decorate
     git rebase -i # sha
 
-    # edit history for commits after latest commit to origin/master
-    git rebase -i origin/master
+    # edit history for commits after latest commit to origin/main
+    git rebase -i origin/main
 
     git log --pretty=format:"%h %s" HEAD~3..HEAD
     
@@ -33,7 +33,7 @@ Range:
 
 Merge Commit:
     
-    # choose master to fall back to
+    # choose main (parent 1) to fall back to
     git revert 23539a2 -m 1
     # choose your branch to fall back to
     git revert 23539a2 -m 2

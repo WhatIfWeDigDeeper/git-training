@@ -2,7 +2,7 @@
 
 Question:  Why are there three areas instead of two?
 
-Is there actually a fourth area?  If so, what is it?
+Is there actually a fourth area?  If so, what is it? _(Hint: we'll cover it in [Lab 7.3](./Lab-7.3-The-Stash.md))_
 
 When using a git command, ask yourself two questions:
 

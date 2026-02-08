@@ -43,7 +43,7 @@ Explore .git
     git log
 
     # amending a commit
-    git commit -amend -m "My 2nd commit"
+    git commit --amend -m "My 2nd commit"
     git log
 
     git log --patch  # or -p to show the changes introduced in each commit
@@ -65,7 +65,7 @@ Explore .git
     git log -Gcatch --patch  # show commits that added or removed "catch" 
 
     # summary
-    git shortlog --since="01 Jan 2018" --before="01 Mar 2018"
+    git shortlog --since="2 months ago" --before="1 month ago"
     # no commit messages and show email address
     git shortlog -se
 
@@ -79,25 +79,26 @@ https://stackoverflow.com/questions/462974/what-are-the-differences-between-doub
 https://stackoverflow.com/questions/7251477/what-are-the-differences-between-double-dot-and-triple-dot-in-git-dif
 
 
-### WIP - _instructions_
-1. create a new local repository "three"
-1. check status
-1. check log
-1. add a README.md file with some content.
-1. check status
-1. stage this file
-1. check status
-1. check log
-1. make another change to README.md
-1. check status.  Why is it duplicated?
-1. undo change to working directory
-1. check status
-1. move staged file back to working directory
-1. stage file again
-1. check status
-1. commit file
-1. check status
-1. check log
+### Instructions
+
+1. Create a new local repository called "three" (`git init three && cd three`)
+1. Check status — what does it say?
+1. Check log — why does it fail?
+1. Create a README.md file with some content
+1. Check status — what state is the file in?
+1. Stage this file
+1. Check status — what changed?
+1. Check log — why does it still fail?
+1. Make another change to README.md
+1. Check status — why does the file appear twice?
+1. Undo the change to the working directory (hint: `git checkout --` or `git restore`)
+1. Check status
+1. Unstage the file back to the working directory (hint: `git reset` or `git restore --staged`)
+1. Stage the file again
+1. Check status
+1. Commit the file
+1. Check status
+1. Check log — what do you see now?
 
 ---
 
